@@ -154,8 +154,8 @@ public class Geofencing implements ResultCallback {
             return mGeofencePendingIntent;
         }
         Intent intent = new Intent(mContext, GeofenceBroadcastReceiver.class);
-        mGeofencePendingIntent = PendingIntent.getBroadcast(mContext, 0, intent, PendingIntent.
-                FLAG_UPDATE_CURRENT);
+        mGeofencePendingIntent = PendingIntent.getBroadcast(mContext, 0,
+                intent, PendingIntent.FLAG_UPDATE_CURRENT);
         return mGeofencePendingIntent;
     }
 
